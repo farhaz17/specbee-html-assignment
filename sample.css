@@ -155,31 +155,31 @@ li a {
 }
 
 .rectangles{
-    width: 80%;
+    width: 65%;
     margin: 0 auto;
     font-size: 12px;
 }
 
 .rectangle-1{
-    width: 80%;
     background-color: #fff;
     margin-top:5%;
     padding: 8px;
   }
   .rectangle-2{
-    width: 80%;
-     background-color:#EDAB5E;
-    color:white;
+    background-color: #fff;
     margin-top:5%;
     padding:8px;
   }
   .rectangle-3{
-    width: 80%;
      background-color:#fff;
     color:black;
     margin-top:5%;
     padding:8px;
     margin-bottom:20%;
+  }
+
+  .active{
+    background-color:#EDAB5E;
   }
 
   .family-pic{
@@ -229,3 +229,14 @@ li a {
 .follow-us{
     margin-top: 14px;
 }
+
+.tab-content{
+    display: none;
+    cursor: pointer;
+}
+
+.tab-display{
+    display:block;
+}
+
+

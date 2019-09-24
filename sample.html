@@ -9,19 +9,21 @@
     </head>
 
     <body>
-        <nav>
-            <ul>
-            <li><a href="#logo"><img class="logo" src="img/logo.svg"></a></li>
-            <div class="nav-item">
-                <li><a href="#home">FIND YOUR HOME</a></li>
-                <li><a href="#fllor">FLOOR PLANS</a></li>
-                <li><a href="#resource">RESOURCES</a></li>
-                <li><a href="#about">ABOUT US</a></li>
-                <li><a href="#contact">CONTACT US</a></li>
-                <li><a class="no-btn"><i class="fa fa-phone"></i> +8165-765(4316)</a></li>
-            </div>
-            </ul>
-        </nav>
+        <header>
+            <nav>
+                <ul>
+                    <li><a href="#logo"><img class="logo" src="img/logo.svg"></a></li>
+                    <div class="nav-item">
+                        <li><a href="#home">FIND YOUR HOME</a></li>
+                        <li><a href="#fllor">FLOOR PLANS</a></li>
+                        <li><a href="#resource">RESOURCES</a></li>
+                        <li><a href="#about">ABOUT US</a></li>
+                        <li><a href="#contact">CONTACT US</a></li>
+                        <li><a class="no-btn"><i class="fa fa-phone"></i> +8165-765(4316)</a></li>
+                    </div>
+                </ul>
+            </nav>
+        </header>
         <main>
             <div class="banner">
                 <img class="mail-banner" src="img/mail-banner.jpg">
@@ -61,23 +63,23 @@
             <div class="row grey-block">
                 <div class="col-6">
                     <div class="container rectangles">
-                        <div class="rectangle-1">
+                        <div onfocus="focusTab(event,'content-1')" onclick="openTab(event,'content-1')" tabindex="0" class="rectangle-1 tablinks active">
                             <h4>2018</h4>
-                            <p> we know he landscape and the climate of the Southeast</p>
+                            <p> we know he landscape and the climate of the Southeast,we know he landscape and the</p>
                         </div>
-                        <div  class="rectangle-2">
+                        <div onfocus="focusTab(event,'content-2')" onclick="openTab(event,'content-2')" tabindex="0"  class="rectangle-2 tablinks">
                             <h4>WINNER</h4>
-                            <p> we know he landscape and the climate of the Southeast
+                            <p> we know he landscape and the climate of the Southeast we know he landscape and the
                             </p> 
                         </div>
-                        <div  class="rectangle-3">
+                        <div onfocus="focusTab(event,'content-3')" onclick="openTab(event,'content-3')" tabindex="0" class="rectangle-3 tablinks">
                             <h4>GREEN TAG SALE</h4>
-                            <p> we know he landscape and the climate of the Southeast
+                            <p> we know he landscape and the climate of the Southeast we know he landscape and the
                             </p>
                         </div>
                     </div>
                 </div>
-                <div class="col-6">
+                <div id="content-1" class="col-6 tab-content tab-display">
                     <div>
                         <h2>South Carolina's 2018 Best <br>Home Builder!</h2>
                         <p>As a regional builder, we know he landscape and the climate of the <br>
@@ -86,6 +88,32 @@
                             place to settle down in your new home. As a regional builder, we know he landscape
                                 and the climate of the <br>
                             Southeast better than anyone. With lush, green mountains and <br>
+                            sprawling sandy beaches ashort
+                        </p>
+                    </div>
+                </div>
+                <div id="content-2" class="col-6 tab-content">
+                    <div>
+                        <h2>South Carolina's 2018 Best <br>Home Builder!</h2>
+                        <p>As a regional builder, we know he landscape and the climate of the <br>
+                            Southeast better than anyone. With lush, green mountains and <br>
+                            sprawling sandy beaches ashort drive away, there is no better <br>
+                            place to settle down in your new home. As a regional builder, we know he landscape
+                        </p>
+                    </div>
+                </div>
+                <div id="content-3" class="col-6 tab-content">
+                    <div>
+                        <h2>South Carolina's 2018 Best <br>Home Builder!</h2>
+                        <p>As a regional builder, we know he landscape and the climate of the <br>
+                            Southeast better than anyone. With lush, green mountains and <br>
+                            sprawling sandy beaches ashort drive away, there is no better <br>
+                            place to settle down in your new home. As a regional builder, we know he landscape
+                                and the climate of the <br>
+                            Southeast better than anyone. With lush, green mountains and
+                            sprawling sandy beaches ashort
+                            and the climate of the
+                            Southeast better than anyone. With lush, green mountains and
                             sprawling sandy beaches ashort
                         </p>
                     </div>
@@ -161,6 +189,35 @@
                 </div>
             </ul>
         </footer>
+
+        <script>
+            function openTab(evt,idName) {
+                var i, tabcontent, tablinks;
+                tabcontent = document.getElementsByClassName("tab-content");
+                for (i = 0; i < tabcontent.length; i++) {
+                    tabcontent[i].style.display = "none";
+                }
+                tablinks = document.getElementsByClassName("tablinks");
+                for (i = 0; i < tablinks.length; i++) {
+                    tablinks[i].className = tablinks[i].className.replace("active", "");
+                }
+                document.getElementById(idName).style.display = "block";
+                evt.currentTarget.className += " active";
+            }
+            function focusTab(evt,idName) {
+                var i, tabcontent, tablinks;
+                tabcontent = document.getElementsByClassName("tab-content");
+                for (i = 0; i < tabcontent.length; i++) {
+                    tabcontent[i].style.display = "none";
+                }
+                tablinks = document.getElementsByClassName("tablinks");
+                for (i = 0; i < tablinks.length; i++) {
+                    tablinks[i].className = tablinks[i].className.replace("active", "");
+                }
+                document.getElementById(idName).style.display = "block";
+                evt.currentTarget.className += " active";
+                }
+        </script>
                 
 
     </body>
