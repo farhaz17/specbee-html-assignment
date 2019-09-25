@@ -33,13 +33,16 @@ input[type="email"],input[type="number"],input[type="text"],input[type="submit"]
   border-bottom:1px solid #757575;
   }
 
+input[type="submit"]{
+    background-color: #C8122E;
+}
+
 
 select {
     width: 100%;
     padding: 12px 20px;
     display: block;
     border: 1px solid #ccc;
-    border-radius: 4px;
     box-sizing: border-box;
     margin-top: 18px;
     border:none;
