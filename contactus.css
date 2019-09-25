@@ -27,9 +27,10 @@ input[type="email"],input[type="number"],input[type="text"],input[type="submit"]
     padding: 12px 20px;
     display: block;
     border: 1px solid #ccc;
-    border-radius: 4px;
     box-sizing: border-box;
     margin-top: 18px;
+    border:none;
+  border-bottom:1px solid #757575;
   }
 
 
@@ -41,6 +42,8 @@ select {
     border-radius: 4px;
     box-sizing: border-box;
     margin-top: 18px;
+    border:none;
+  border-bottom:1px solid #757575;
   }
 
 /*header */
