@@ -16,7 +16,7 @@ li {
 }
 
 .nav-item{
-    margin-left: 15%;
+    float: right;
 }
 
 .nav-item li a:hover{
